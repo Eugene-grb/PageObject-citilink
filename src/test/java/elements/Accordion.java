@@ -4,9 +4,9 @@ import helpers.WaitFor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Accordeon extends BaseElement {
+public class Accordion extends BaseElement {
 
-    public Accordeon(WebDriver driver, By by) {
+    public Accordion(WebDriver driver, By by) {
         super(driver, by);
     }
 
