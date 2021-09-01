@@ -12,13 +12,13 @@ public class WebDriverFactory {
         switch (name) {
             case CHROME:
                 logger.info("Драйвер для браузера Google Chrome");
-                ChromeBrowser.getDriver();
+                return ChromeBrowser.getDriver();
             case EDGE:
                 logger.info("Драйвер для браузера Microsoft Edge");
-                EdgeBrowser.getDriver();
+                return EdgeBrowser.getDriver();
             case FIREFOX:
                 logger.info("Драйвер для браузера Mozilla Firefox");
-                FirefoxBrowser.getDriver();
+                return FirefoxBrowser.getDriver();
             default:
                 throw new RuntimeException("Некорректное имя браузера");
         }
