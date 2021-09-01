@@ -19,7 +19,7 @@ public class SmartphoneProductPage_Test extends BaseTest {
         SmartphoneProductPage smartphoneProductPage = getProductPage(product, ram);
         String actualTitle = smartphoneProductPage.getPageTitle();
 
-        String expectedTitle = "Купить Смартфон SAMSUNG Galaxy Note 20 Ultra 256Gb, SM-N985F, черный в интернет-магазине СИТИЛИНК, цена на Смартфон SAMSUNG Galaxy Note 20 Ultra 256Gb, SM-N985F, черный (1404218) - Волгоград";
+        String expectedTitle = "Купить Смартфон SAMSUNG Galaxy Note 20 Ultra 256Gb, SM-N985F, бронзовый в интернет-магазине СИТИЛИНК, цена на Смартфон SAMSUNG Galaxy Note 20 Ultra 256Gb, SM-N985F, бронзовый (1404220) - Волгоград";
         Assertions.assertEquals(expectedTitle, actualTitle);
     }
 
@@ -32,7 +32,7 @@ public class SmartphoneProductPage_Test extends BaseTest {
         SmartphonesPage smartphonesPage = new SmartphonesPage(driver);
         smartphonesPage.sortPriceButton();
         smartphonesPage.sortPriceButton();
-        JSExecutor.scrollBy(0, 900);
+        JSExecutor.scrollBy(0, 1200);
         smartphonesPage.checkboxCompanyClick(product);
         JSExecutor.scrollBy(0, 650);
         smartphonesPage.checkboxRamClick(ram);

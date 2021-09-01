@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     protected static WebDriver driver;
     private static final Logger logger = LogManager.getLogger(BaseTest.class);
@@ -20,7 +20,6 @@ public class BaseTest {
     // Перед каждым тестом
     @BeforeEach
     public void setUp() {
-        // Получить параметр запуска через mvn -DBrowser
         String browser = System.getProperty("browser", "chrome").toLowerCase();
 
         // Получаем экземпляр драйвера браузера
